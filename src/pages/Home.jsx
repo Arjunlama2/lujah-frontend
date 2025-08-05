@@ -7,7 +7,7 @@ function Home() {
  
   return (
     <div>
-        <Header/>
+     
         <Hero data={heroDetails} />
         <Card data={plan}/>
     </div>

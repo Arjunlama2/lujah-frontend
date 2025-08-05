@@ -5,6 +5,7 @@ import { IoMdCheckmarkCircle } from "react-icons/io";
 function Card({ data }) {
   return (
     <div className="flex justify-around mt-5">
+      
       {data.map((el) => {
         return (
           <div className=" flex flex-col w-80  items-center border-2 rounded-2xl border-amber-500 ">
@@ -17,7 +18,7 @@ function Card({ data }) {
                 {el.features.map((feat) => {
                   return (
                     <div className="flex gap-2 items-center">
-                    <IoMdCheckmarkCircle />  <li className="list-none leading-10">{feat}</li>
+                    <IoMdCheckmarkCircle className="text-green-500" />  <li className="list-none leading-10">{feat}</li>
                     </div>
                   );
                 })}
